@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <title>Xuan Li- Web Assign2 </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+<div class="intro">
+  <div class="title">
+    <h1>Xuan's Tour</h1>
+    <br />
+    <h2> Paddle Game </h2>
+    <h4>Please Use your arrow key to control the paddle. Get the ball and hit the bricks</h4>
+    <a href="game.html">    
+           <div class="button">          
+            <p class="btnText">READY?</p>
+            <div class="btnTwo">
+              <p class="btnText2">GO!</p>
+            </div>
+         </div>  
+    </a>
+</div>
+  </div>
+  <!-- /.title -->
+  <nav class="main-navigation">
+    <ul>
+        <li><a href="http://www.pitt.edu/~xul23/web:Assign1/">Personal Website<</a></li>
+      <li><a href="https://www.facebook.com/li.xuan.5815255?fref=ts">Facebook</a></li>
+      <li><a href="https://www.linkedin.com/in/xuanli0212">LinkedIn</a></li>
+      <li><a href="https://www.qoogle.com">Twitter</a></li>
+      <li><a href="http://www.pitt.edu/~xul23/web:Assign1/contact.html">Contact me</a></li>
+    </ul>
+  </nav>
+  <!-- /.navigation -->
+  
+<!-- /.intro -->
+<script type="text/javascript">
+        var $button = document.querySelector('.button');
+            $button.addEventListener('click', function() {
+            var duration = 0.3,
+            delay = 0.08;
+            TweenMax.to($button, duration, {scaleY: 1.6, ease: Expo.easeOut});
+            TweenMax.to($button, duration, {scaleX: 1.2, scaleY: 1, ease: Back.easeOut, easeParams: [3], delay: delay});
+            TweenMax.to($button, duration * 1.25, {scaleX: 1, scaleY: 1, ease: Back.easeOut, easeParams: [6], delay: delay * 3 });
+    });
+</script>    
+    
+   </body>
+</html>
